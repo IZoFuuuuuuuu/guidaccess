@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF=8">
+    <title>GuidedAccess</title>
+    <script>
+        window.addEventListener('load', function() {
+            var accessPassword = "375640";
+
+            window.settimeout(function() {
+                if (window.confirm('アクセスガイドを開始しますか？')) {
+                    window.location = "accessibility://startGuidedAccessSession/?passcode=" + accessPassword;
+                }
+            }, 5000);
+        });
+    </script>
+    <link rel="shortcut icon" href="img/icon1.jpg" type="img/icon1.jpg">
+</head>
+<body>
+    Set GuidedAccess
+</body>
